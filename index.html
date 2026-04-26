@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatternNexus | E-Governance Document Clustering</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix@1.1.1"></script>
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="logo">Pattern<span>Nexus</span></div>
+        <div class="nav-links">
+            <a href="#overview">Overview</a>
+            <a href="#clusters">Clusters</a>
+            <a href="#visuals">Visualizations</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="fade-in">Pattern<span>Nexus</span></h1>
+        <p class="subtitle fade-in">Unlocking economic patterns through advanced document clustering and unsupervised machine learning.</p>
+        
+        <div class="search-group fade-in" style="animation-delay: 0.2s;">
+            <div class="search-container">
+                <input type="text" id="industry-search" list="industries" placeholder="Search primary industry..." class="glass">
+                <div class="search-icon">🔍</div>
+            </div>
+            
+            <button id="compare-toggle" class="glass-btn">Comparison Mode</button>
+            
+            <div class="search-container hidden" id="compare-search-box">
+                <input type="text" id="industry-search-2" list="industries" placeholder="Search secondary industry..." class="glass">
+                <div class="search-icon">⚔️</div>
+            </div>
+            
+            <datalist id="industries">
+                <!-- Populated by JS -->
+            </datalist>
+        </div>
+        
+        <div class="live-status fade-in">
+            <span class="pulse"></span> Monitoring Live Data Stream
+        </div>
+    </header>
+
+    <main>
+        <section id="overview" class="stats-container">
+            <div class="stat-card glass fade-in">
+                <h3>Total Records</h3>
+                <div class="value" id="total-records">7,799</div>
+            </div>
+            <div class="stat-card glass fade-in">
+                <h3>Optimal Clusters</h3>
+                <div class="value" id="optimal-k">5</div>
+            </div>
+            <div class="stat-card glass fade-in">
+                <h3>Analysis Mode</h3>
+                <div class="value">USML / TF-IDF</div>
+            </div>
+        </section>
+
+        <section id="clusters">
+            <h2 class="section-title">Identified Clusters</h2>
+            <div id="cluster-grid" class="cluster-grid">
+                <div class="loading">Processing results...</div>
+            </div>
+        </section>
+
+        <section id="visuals">
+            <h2 class="section-title">Visual Interpretations</h2>
+            <div class="visuals-grid">
+                <div class="visual-card glass">
+                    <h3>Interactive PCA Cluster Mapping</h3>
+                    <div class="chart-container">
+                        <canvas id="pcaChart"></canvas>
+                    </div>
+                    <p>Live spatial distribution based on document features.</p>
+                </div>
+                <div class="visual-card glass">
+                    <h3>Feature Correlation Heatmap</h3>
+                    <div id="heatmap-wrapper" class="heatmap-wrapper-single">
+                        <div class="heatmap-cell">
+                            <div id="heatmap-label-1" class="heatmap-label"></div>
+                            <canvas id="distChart"></canvas>
+                        </div>
+                        <div class="heatmap-cell hidden" id="heatmap-cell-2">
+                            <div id="heatmap-label-2" class="heatmap-label"></div>
+                            <canvas id="distChart2"></canvas>
+                        </div>
+                    </div>
+                    <p id="heatmap-desc">Real-time correlation analysis between document features and economic metrics.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="conclusion" class="fade-in hidden">
+            <div class="conclusion-box glass">
+                <h2 class="section-title">💡 Insight Conclusion</h2>
+                <div id="conclusion-text" class="conclusion-text">
+                    Select a category to see analysis conclusions.
+                </div>
+            </div>
+        </section>
+    </main>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PatternNexus | Powered by Antigravity AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

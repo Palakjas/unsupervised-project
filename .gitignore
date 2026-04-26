@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+results.json
+pca_data.json
+heatmap_now.png
+pca_now.png
+dashboard_*.png
+.tempmediaStorage/
