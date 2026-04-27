@@ -26,10 +26,28 @@ graph LR
 3. **Glassmorphism UI:** A premium, responsive interface that provides immediate economic insights through high-fidelity charts.
 4. **Cloud Scalability:** Successfully deployed on Vercel with a persistent GitHub CI/CD pipeline.
 
-## 5. Value Proposition
+## 5. Statistical Outcomes
+The following metrics quantify the performance and structural integrity of the unsupervised model:
+
+| Metric | Value | Interpretation |
+| :--- | :--- | :--- |
+| **Total Records Processed** | 4,626 | High-volume industrial data ingestion. |
+| **Silhouette Score** | 0.1963 | Indicates clear structural density within clusters. |
+| **PCA Variance Explained** | 74.20% | 2D visualization retains 74% of original high-dimensional info. |
+| **Inertia (SSE)** | 4416.82 | Measure of internal cluster cohesion (sum of squared errors). |
+
+### Cluster Distribution (Segmentation)
+The model automatically categorized the industries into 5 distinct economic archetypes:
+- **Cluster 0 (Service & Public Admin):** 937 records
+- **Cluster 1 (Financial & Real Estate):** 89 records (High-Value outlier cluster)
+- **Cluster 2 (Agriculture & Trade):** 294 records
+- **Cluster 3 (Industrial Transport):** 2,493 records (Core economic backbone)
+- **Cluster 4 (Primary Sectors):** 813 records
+
+## 6. Value Proposition
 This PoC demonstrates that unsupervised learning can uncover "Economic Nexus" points—hidden relationships between price indices and industrial sectors—that are invisible to standard spreadsheet analysis.
 
-## 6. Project Status
+## 7. Project Status
 - [x] Data Ingestion Engine
 - [x] PCA & Clustering Pipeline
 - [x] Real-Time Heatmap Logic
