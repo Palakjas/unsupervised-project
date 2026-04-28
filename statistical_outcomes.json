@@ -1,0 +1,28 @@
+{
+    "total_records": 4626,
+    "silhouette_score": 0.1962631791830063,
+    "pca_variance_explained_percent": 74.19557720422745,
+    "inertia": 4416.8232421875,
+    "clusters": {
+        "Cluster 0": {
+            "size": 937,
+            "top_industry": "Transport, Storage, Communication & Services Related to Broadcasting"
+        },
+        "Cluster 1": {
+            "size": 89,
+            "top_industry": "Financial, Real Estate & Professional Services"
+        },
+        "Cluster 2": {
+            "size": 294,
+            "top_industry": "Agriculture, Livestock, Forestry and Fishing"
+        },
+        "Cluster 3": {
+            "size": 2493,
+            "top_industry": "Agriculture, Livestock, Forestry and Fishing"
+        },
+        "Cluster 4": {
+            "size": 813,
+            "top_industry": "Manufacturing"
+        }
+    }
+}
